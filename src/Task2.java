@@ -28,9 +28,9 @@ public class Task2 {
       // ArrayList.get() - сложность O(1)
       // LinkedList.get() - сложность O(n)
       if (numbers.get(mid) < target) {
-        left = mid + 1;
-      } else { // не = и не <
         right = mid; // потому что right - не включая
+      } else { // не = и не <
+        left = mid + 1;
       }
     }
     // после окончания цикла right - left = 0 или 1, и проверяем мы numbers[left]
